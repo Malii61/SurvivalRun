@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+
 public static class MathematicalOperationCalculator
 {
     private static System.Data.DataTable table = new System.Data.DataTable();
@@ -16,15 +17,11 @@ public static class MathematicalOperationCalculator
     };
     public static int FindResult(string expression)
     {
-        expression = AdjustExpression(expression);
-        int i = (int)(table.Compute(expression, ""));
-        Debug.Log(i);
-        //if (int.TryParse((string)table.Compute(expression, ""), out int result))
-        //{
-        //    return result;
-        //}
-
-        return PointManager.Instance.GetPoint(PersonType.soldier);
+        object res = table.Compute(AdjustExpression(expression), "");
+        Debug.Log(res);
+        res = Convert.ToInt32(res);
+        Debug.Log(res);
+        return (int)res;
     }
 
     private static string AdjustExpression(string expression)

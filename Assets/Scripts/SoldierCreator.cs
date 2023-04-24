@@ -12,18 +12,22 @@ public class SoldierCreator : MonoBehaviour
     {
         Instance = this;
     }
+    private void Start()
+    {
+        CreateSoldiers();
+    }
     public void CreateSoldiers()
     {
         OnCreatedNewSoldiers?.Invoke(this, EventArgs.Empty);
         DestroyPreviousSoldiers();
+        int soldiersPoint = PointManager.Instance.GetPoint(PersonType.soldier);
         for (int i = soldiers.Count - 1; i >= 0; i--)
         {
-            int soldiersPoint = PointManager.Instance.GetPoint(PersonType.soldier);
             if (soldiersPoint < soldiers[i].soldierPointRequired)
                 continue;
             int count = soldiersPoint / soldiers[i].soldierPointRequired;
             CreateSoldier(soldiers[i], count);
-            PointManager.Instance.SetPoint(PersonType.soldier, soldiersPoint - soldiers[i].soldierPointRequired * count);
+            soldiersPoint -= soldiers[i].soldierPointRequired * count;
         }
     }
     private void DestroyPreviousSoldiers()
@@ -41,7 +45,7 @@ public class SoldierCreator : MonoBehaviour
         {
             Transform soldier = Instantiate(soldierSO.soldierPrefab, creatingSoldierTransform);
             soldier.Translate(new Vector3(UnityEngine.Random.Range(-1.5f, 1.5f), 0, UnityEngine.Random.Range(-1.5f, 1.5f)));
-            soldier.GetComponent<SoldierManager>().InitializeSoldier(soldierSO);
+            soldier.GetComponent<Soldier>().InitializeSoldier(soldierSO);
         }
     }
 }

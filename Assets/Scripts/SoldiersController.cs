@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class SoldiersController : MonoBehaviour
 {
     public enum PositionClamp
@@ -13,6 +13,7 @@ public class SoldiersController : MonoBehaviour
     private PositionClamp positionClamp = PositionClamp.none;
     [SerializeField] private float leftAndRightSpeed;
     [SerializeField] private float forwardSpeed;
+    [SerializeField] private TextMeshProUGUI soldiersPointUIText;
     private void LateUpdate()
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -42,14 +43,26 @@ public class SoldiersController : MonoBehaviour
         float horizontalMove = Input.GetAxis("Horizontal") * leftAndRightSpeed * Time.deltaTime;
         Move(horizontalMove);
 #endif 
+        soldiersPointUIText.text = PointManager.Instance.GetPoint(PersonType.soldier).ToString();
+    }
+    private float GetHorizontalAxis()
+    {
+        #if UNITY_ANDROID && !UNITY_EDITOR
+            return Input.GetTouch(0).deltaPosition.x;
+        #else
+            return Input.GetAxis("Horizontal");
+        #endif 
     }
     private void Move(float moveValue)
     {
         float adjustedHorizontalMove = CheckPositionClamper(moveValue);
-        //for (int i = 0; i < transform.childCount; i++)
-        //{
-        //    transform.GetChild(i).Translate(-forwardSpeed * Time.deltaTime, 0, adjustedHorizontalMove);
-        //}
+        float horizontalAxisValue = GetHorizontalAxis();
+        for (int i = 1; i < transform.childCount; i++)
+        {
+            if(transform.GetChild(i).TryGetComponent(out Animator anim)){
+                anim.SetFloat("Horizontal", horizontalAxisValue);
+            }
+        }
         transform.Translate(forwardSpeed * Time.deltaTime, 0, -adjustedHorizontalMove);
     }
     private float CheckPositionClamper(float horizontalMove)

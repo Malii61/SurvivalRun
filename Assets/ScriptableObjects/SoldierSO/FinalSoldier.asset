@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70c80466e5faaa344bf760a201f7e788, type: 3}
-  m_Name: Soldier
+  m_Name: FinalSoldier
   m_EditorClassIdentifier: 
-  soldierName: Soldier
-  soldierPrefab: {fileID: 5427609939114248601, guid: 84ecb4a833a1c80418972199a3c3cd20,
+  soldierName: MegaSoldier
+  soldierPrefab: {fileID: 4963749025694560877, guid: cc5c39870a54bd34e97e94696882b2e7,
     type: 3}
-  health: 100
-  soldierOrder: 1
-  soldierPointRequired: 1
-  gunType: 0
-  damage: 20
-  fireRate: 1
+  health: 999999
+  soldierOrder: 5
+  soldierPointRequired: 250000
+  gunType: 1
+  damage: 999999
+  fireRate: 0

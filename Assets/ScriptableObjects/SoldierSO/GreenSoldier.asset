@@ -17,7 +17,7 @@ MonoBehaviour:
     type: 3}
   health: 150
   soldierOrder: 2
-  soldierPointRequired: 5
+  soldierPointRequired: 8
   gunType: 1
   damage: 40
-  fireRate: 0.2
+  fireRate: 0.4

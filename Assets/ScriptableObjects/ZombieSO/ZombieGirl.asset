@@ -15,7 +15,7 @@ MonoBehaviour:
   zombieName: ZombieGirl
   zombiePrefab: {fileID: 3237046734476551716, guid: 5d5ef7e88f1698947ba15ffbaaef0e9e,
     type: 3}
-  attackSpeed: 0.5
-  health: 40
+  attackSpeed: 0.3
+  health: 75
   damage: 30
   zombieCountRequired: 3

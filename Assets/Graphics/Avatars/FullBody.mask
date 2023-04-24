@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FullBody
+  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: genAssault_LOD0
+    m_Weight: 1
+  - m_Path: genAssault_LOD1
+    m_Weight: 1
+  - m_Path: genAssault_LOD2
+    m_Weight: 1
+  - m_Path: genAssault_LOD3
+    m_Weight: 1
+  - m_Path: genAssault_reference
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_LeftUpLeg
+    m_Weight: 0
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_LeftUpLeg/genAssault_LeftLeg
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_LeftUpLeg/genAssault_LeftLeg/genAssault_LeftFoot
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_LeftUpLeg/genAssault_LeftLeg/genAssault_LeftFoot/genAssault_LeftToeBase
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_LeftUpLeg/genAssault_LeftLeg/genAssault_LeftFoot/genAssault_LeftToeBase/genAssault_LeftToes_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_RightUpLeg
+    m_Weight: 0
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_RightUpLeg/genAssault_RightLeg
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_RightUpLeg/genAssault_RightLeg/genAssault_RightFoot
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_RightUpLeg/genAssault_RightLeg/genAssault_RightFoot/genAssault_RightToeBase
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_RightUpLeg/genAssault_RightLeg/genAssault_RightFoot/genAssault_RightToeBase/genAssault_RightToes_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandIndex1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandIndex1/genAssault_LeftHandIndex2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandIndex1/genAssault_LeftHandIndex2/genAssault_LeftHandIndex3
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandIndex1/genAssault_LeftHandIndex2/genAssault_LeftHandIndex3/genAssault_LeftHandIndex_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandMiddle1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandMiddle1/genAssault_LeftHandMiddle2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandMiddle1/genAssault_LeftHandMiddle2/genAssault_LeftHandMiddle3
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandMiddle1/genAssault_LeftHandMiddle2/genAssault_LeftHandMiddle3/genAssault_LeftHandMiddle_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandPinky1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandPinky1/genAssault_LeftHandPinky2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandPinky1/genAssault_LeftHandPinky2/genAssault_LeftHandPinky3
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandPinky1/genAssault_LeftHandPinky2/genAssault_LeftHandPinky3/genAssault_LeftHandPinky_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandRing1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandRing1/genAssault_LeftHandRing2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandRing1/genAssault_LeftHandRing2/genAssault_LeftHandRing3
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandRing1/genAssault_LeftHandRing2/genAssault_LeftHandRing3/genAssault_LeftHandRing_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandThumb1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandThumb1/genAssault_LeftHandThumb2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandThumb1/genAssault_LeftHandThumb2/genAssault_LeftHandThumb3
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandThumb1/genAssault_LeftHandThumb2/genAssault_LeftHandThumb3/genAssault_LeftHandThumb_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_Neck
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_Neck/genAssault_Head
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_Neck/genAssault_Head/genAssault_Head_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandIndex1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandIndex1/genAssault_RightHandIndex2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandIndex1/genAssault_RightHandIndex2/genAssault_RightHandIndex3
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandIndex1/genAssault_RightHandIndex2/genAssault_RightHandIndex3/genAssault_RightHandIndex_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandMiddle1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandMiddle1/genAssault_RightHandMiddle2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandMiddle1/genAssault_RightHandMiddle2/genAssault_RightHandMiddle3
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandMiddle1/genAssault_RightHandMiddle2/genAssault_RightHandMiddle3/genAssault_RightHandMiddle_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandPinky1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandPinky1/genAssault_RightHandPinky2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandPinky1/genAssault_RightHandPinky2/genAssault_RightHandPinky3
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandPinky1/genAssault_RightHandPinky2/genAssault_RightHandPinky3/genAssault_RightHandPinky_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandRing1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandRing1/genAssault_RightHandRing2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandRing1/genAssault_RightHandRing2/genAssault_RightHandRing3
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandRing1/genAssault_RightHandRing2/genAssault_RightHandRing3/genAssault_RightHandRing_End
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandThumb1
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandThumb1/genAssault_RightHandThumb2
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandThumb1/genAssault_RightHandThumb2/genAssault_RightHandThumb3
+    m_Weight: 1
+  - m_Path: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandThumb1/genAssault_RightHandThumb2/genAssault_RightHandThumb3/genAssault_RightHandThumb_End
+    m_Weight: 1

@@ -7,22 +7,19 @@ public enum PersonType
 public class PointManager : MonoBehaviour
 {
     public static PointManager Instance { get; private set; }
-    private int zombiesPoint = 12;
-    private int soldiersPoint = 15;
+    private int zombiesPoint = 5;
+    private int soldiersPoint = 20;
     private void Awake()
     {
         Instance = this;
     }
     public int GetPoint(PersonType type)
     {
-        switch (type)
+        return type switch
         {
-            default:
-            case PersonType.zombie:
-                return zombiesPoint;
-            case PersonType.soldier:
-                return soldiersPoint;
-        }
+            PersonType.soldier => soldiersPoint,
+            _ => zombiesPoint,
+        };
     }
     public void SetPoint(PersonType type, int point)
     {

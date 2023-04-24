@@ -16,6 +16,6 @@ MonoBehaviour:
   zombiePrefab: {fileID: 7332930891822206857, guid: 36ca239e5e97f5e47bbbb9b964d75416,
     type: 3}
   attackSpeed: 1
-  health: 50
-  damage: 15
+  health: 100
+  damage: 30
   zombieCountRequired: 1
