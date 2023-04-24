@@ -1,0 +1,773 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!90 &9000000
+Avatar:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AssaultAvatar
+  m_AvatarSize: 8564
+  m_Avatar:
+    serializedVersion: 3
+    m_AvatarSkeleton:
+      data:
+        m_Node:
+        - m_ParentId: -1
+          m_AxesId: -1
+        - m_ParentId: 0
+          m_AxesId: -1
+        - m_ParentId: 1
+          m_AxesId: -1
+        - m_ParentId: 2
+          m_AxesId: -1
+        - m_ParentId: 3
+          m_AxesId: -1
+        - m_ParentId: 4
+          m_AxesId: -1
+        - m_ParentId: 5
+          m_AxesId: -1
+        - m_ParentId: 6
+          m_AxesId: -1
+        - m_ParentId: 7
+          m_AxesId: -1
+        - m_ParentId: 5
+          m_AxesId: -1
+        - m_ParentId: 9
+          m_AxesId: -1
+        - m_ParentId: 10
+          m_AxesId: -1
+        - m_ParentId: 11
+          m_AxesId: -1
+        - m_ParentId: 12
+          m_AxesId: -1
+        - m_ParentId: 13
+          m_AxesId: -1
+        - m_ParentId: 14
+          m_AxesId: -1
+        - m_ParentId: 15
+          m_AxesId: -1
+        - m_ParentId: 16
+          m_AxesId: -1
+        - m_ParentId: 13
+          m_AxesId: -1
+        - m_ParentId: 18
+          m_AxesId: -1
+        - m_ParentId: 19
+          m_AxesId: -1
+        - m_ParentId: 20
+          m_AxesId: -1
+        - m_ParentId: 13
+          m_AxesId: -1
+        - m_ParentId: 22
+          m_AxesId: -1
+        - m_ParentId: 23
+          m_AxesId: -1
+        - m_ParentId: 24
+          m_AxesId: -1
+        - m_ParentId: 13
+          m_AxesId: -1
+        - m_ParentId: 26
+          m_AxesId: -1
+        - m_ParentId: 27
+          m_AxesId: -1
+        - m_ParentId: 28
+          m_AxesId: -1
+        - m_ParentId: 13
+          m_AxesId: -1
+        - m_ParentId: 30
+          m_AxesId: -1
+        - m_ParentId: 31
+          m_AxesId: -1
+        - m_ParentId: 32
+          m_AxesId: -1
+        - m_ParentId: 5
+          m_AxesId: -1
+        - m_ParentId: 34
+          m_AxesId: -1
+        - m_ParentId: 35
+          m_AxesId: -1
+        - m_ParentId: 36
+          m_AxesId: -1
+        - m_ParentId: 37
+          m_AxesId: -1
+        - m_ParentId: 38
+          m_AxesId: -1
+        - m_ParentId: 39
+          m_AxesId: -1
+        - m_ParentId: 40
+          m_AxesId: -1
+        - m_ParentId: 41
+          m_AxesId: -1
+        - m_ParentId: 38
+          m_AxesId: -1
+        - m_ParentId: 43
+          m_AxesId: -1
+        - m_ParentId: 44
+          m_AxesId: -1
+        - m_ParentId: 45
+          m_AxesId: -1
+        - m_ParentId: 38
+          m_AxesId: -1
+        - m_ParentId: 47
+          m_AxesId: -1
+        - m_ParentId: 48
+          m_AxesId: -1
+        - m_ParentId: 49
+          m_AxesId: -1
+        - m_ParentId: 38
+          m_AxesId: -1
+        - m_ParentId: 51
+          m_AxesId: -1
+        - m_ParentId: 52
+          m_AxesId: -1
+        - m_ParentId: 53
+          m_AxesId: -1
+        - m_ParentId: 38
+          m_AxesId: -1
+        - m_ParentId: 55
+          m_AxesId: -1
+        - m_ParentId: 56
+          m_AxesId: -1
+        - m_ParentId: 57
+          m_AxesId: -1
+        - m_ParentId: 2
+          m_AxesId: -1
+        - m_ParentId: 59
+          m_AxesId: -1
+        - m_ParentId: 60
+          m_AxesId: -1
+        - m_ParentId: 61
+          m_AxesId: -1
+        - m_ParentId: 62
+          m_AxesId: -1
+        - m_ParentId: 2
+          m_AxesId: -1
+        - m_ParentId: 64
+          m_AxesId: -1
+        - m_ParentId: 65
+          m_AxesId: -1
+        - m_ParentId: 66
+          m_AxesId: -1
+        - m_ParentId: 67
+          m_AxesId: -1
+        - m_ParentId: 0
+          m_AxesId: -1
+        - m_ParentId: 0
+          m_AxesId: -1
+        - m_ParentId: 0
+          m_AxesId: -1
+        - m_ParentId: 0
+          m_AxesId: -1
+        m_ID: 000000009d3805847ce457e37b8b76d2e2cf9bdc4844929287101f84932b1adb92426e16307ae8626c999e17fd9a49a1cd3da3336b7a1b6e51ac02822c7d6e8fd3f7d9f844b8a0bfc856e96f21a7be78a71d57141ddce0c2b4297a09191f8039ed4ea078fd144c708bd90dec7c92736d94ee5286fce21a32a42528857fcef511345a48ac37459546213140a7dc3e1de3122cad48c51057a73533ed6b971e6889c604474708520a13ec5a402c07b184de50f902521af19df2ea9621c57bce17b85d68179ba713c45ecdacb50eb032038af46fef9a1243486bd6407e306bc245342b7f5ce122f9efdd1046df003485470a830b6797639a79c7837655b89d753b333e326be96c39aaec8722c3e6be4e88e4ca6439a4d82379f24e137e85f442771c6272706b
+        m_AxesArray: []
+    m_AvatarSkeletonPose:
+      data:
+        m_X:
+        - t: {x: 0, y: 0, z: 0}
+          q: {x: 0, y: 0, z: 0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.10093973, y: -0.18962738, z: -0.099715136}
+          q: {x: 0.02724295, y: 0.2893299, z: 0.061667666, w: 0.95485246}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 4.422791e-16, y: 1.0404824, z: 0.008740212}
+          q: {x: 0.5158441, y: -0.48363784, z: -0.5158434, w: 0.48363715}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.17225586, y: -0.015851138, z: 0.00000003044324}
+          q: {x: 0.99792284, y: 0.061774768, z: 0.009996199, w: 0.015298352}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.1349213, y: -0.023190534, z: 0.000000007649888}
+          q: {x: -0.025172533, y: 0.051427774, z: 0.12492039, w: 0.9905132}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.14818832, y: -0.0062230867, z: 0.0000000039895833}
+          q: {x: 0.9621668, y: 0.26770723, z: -0.050374035, w: 0.0055118124}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.16515428, y: 0.00009064284, z: -2.4871763e-17}
+          q: {x: 0.025688589, y: 0.038056403, z: 0.016193192, w: 0.9988141}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.12698515, y: 0, z: -3.004541e-17}
+          q: {x: 0.028115692, y: 0.016230714, z: -0.117923856, w: 0.99249184}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.20520057, y: -2.1884716e-14, z: -2.7755575e-19}
+          q: {x: 0.6221125, y: -0.33723205, z: -0.6214402, w: -0.33624798}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.0871375, y: 0.00022339018, z: -0.014451526}
+          q: {x: -0.5743774, y: -0.35630232, z: -0.5380367, w: 0.5036426}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.15247923, y: -0.0007761365, z: 0.011763243}
+          q: {x: 0.332414, y: 0.41877595, z: -0.24858077, w: 0.8076728}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.31486273, y: -5.684342e-16, z: 7.105427e-17}
+          q: {x: -0.53474206, y: -0.17240502, z: 0.78296494, w: -0.2670079}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.13479279, y: 2.842171e-16, z: 0}
+          q: {x: 0.8504915, y: -0.14052245, z: -0.08831454, w: -0.49911746}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.15255566, y: 0.0025455025, z: 0.001566454}
+          q: {x: 0.44310677, y: 0.045547646, z: -0.09154812, w: 0.8906182}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.09309238, y: -0.000020072603, z: 0.009763584}
+          q: {x: 0.98656684, y: 0.11059021, z: 0.08164666, w: 0.0882583}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.06018992, y: -0.0008488519, z: 0.00014331551}
+          q: {x: -0.37334695, y: -0.11214716, z: 0.78141284, w: 0.48726696}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.032672055, y: 0.000003705309, z: 0.00031595747}
+          q: {x: 0.6396201, y: 0.028764674, z: 0.51843214, w: 0.5668218}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.03139352, y: -0.0028641266, z: 0.0035967543}
+          q: {x: 0.24262103, y: 0.78870654, z: -0.56176704, w: -0.05911701}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.09500461, y: 0.01908212, z: 0.027230162}
+          q: {x: 0.91781086, y: 0.10443882, z: 0.050078508, w: 0.3797472}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.049479295, y: -0.007900492, z: -0.0017969696}
+          q: {x: 0.023878407, y: -0.055550843, z: 0.15511923, w: 0.9860436}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.027953245, y: -0.0013125371, z: 0.0015861632}
+          q: {x: -0.27657434, y: -0.08594135, z: 0.041027583, w: 0.95626223}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.029275374, y: -0.015793702, z: -0.0055089914}
+          q: {x: 0.14323646, y: 0.92566633, z: -0.21105717, w: -0.27942812}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.020803988, y: 0.04750479, z: 0.027708422}
+          q: {x: 0.88551456, y: -0.19689842, z: -0.10676801, w: 0.40705723}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.034341685, y: -2.6201262e-16, z: -1.5911751e-16}
+          q: {x: 0.9739778, y: -0.0108183175, z: -0.22074208, w: -0.05023101}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.04739018, y: -0.00074160856, z: 0.0028931787}
+          q: {x: 0.9688058, y: 0.16145687, z: 0.14827344, w: 0.1155943}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.036814675, y: -0.0018234294, z: 0.0037512782}
+          q: {x: 0.02715915, y: -0.7316933, z: 0.10256785, w: 0.6733254}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.087032326, y: -0.012558273, z: -0.018490369}
+          q: {x: 0.9699398, y: -0.038377378, z: 0.117915355, w: 0.2093797}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.0477196, y: 0.0030816912, z: 0.00023942794}
+          q: {x: 0.2679676, y: 0.32480112, z: 0.7256813, w: 0.5441362}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.02851684, y: -0.0015920638, z: 0.002011001}
+          q: {x: 0.30995333, y: 0.5919209, z: 0.162671, w: 0.72601426}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.026495606, y: -0.00011475478, z: 0.0038941605}
+          q: {x: -0.14878878, y: -0.5658018, z: 0.8003567, w: -0.13099408}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.07350107, y: -0.021223558, z: -0.038230717}
+          q: {x: -0.74257797, y: -0.09086778, z: -0.023675043, w: 0.6631444}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.035658944, y: 2.734271e-16, z: 4.178949e-17}
+          q: {x: 0.6393049, y: -0.39697534, z: -0.6228739, w: -0.21384105}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.021659419, y: 0.0008476322, z: -0.00039221018}
+          q: {x: 0.123351105, y: -0.2314674, z: 0.4225208, w: 0.8675734}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.021386303, y: -0.006474029, z: -0.0034692015}
+          q: {x: 0.31604862, y: 0.8547174, z: 0.41171843, w: -0.0077130254}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.0871326, y: 0.00022361781, z: 0.0144515745}
+          q: {x: 0.5167545, y: 0.5389843, z: 0.53479415, w: -0.39554507}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.15293275, y: 0.00059061445, z: -0.00061949587}
+          q: {x: 0.417659, y: -0.3126248, z: 0.37044427, w: 0.76850355}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.31486264, y: 0.0000016676835, z: 0.000000062966805}
+          q: {x: 0.14726275, y: -0.64603776, z: 0.13661486, w: 0.73640025}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.13479559, y: 0.0000017437421, z: 0.0000059898384}
+          q: {x: -0.6006457, y: 0.032086693, z: -0.0042237905, w: 0.79886}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.15255456, y: -0.0025434312, z: -0.001566781}
+          q: {x: 0.9977046, y: -0.064703, z: -0.011034286, w: -0.016653774}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.09133868, y: -0.007543264, z: 0.01902577}
+          q: {x: -0.0049590794, y: -0.07361065, z: 0.11856751, w: 0.9902013}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.06018834, y: 0.0007895774, z: 0.0003412886}
+          q: {x: 0.028078247, y: -0.007982821, z: 0.39939022, w: 0.91631615}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.032675825, y: -0.00022781694, z: -0.00021944364}
+          q: {x: 0.04457732, y: 0.025624942, z: 0.30162078, w: 0.9520405}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.03139194, y: 0.004574911, z: -0.00045857352}
+          q: {x: -0.016950676, y: -0.010455883, z: 0.040503092, w: 0.99898094}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.08965448, y: -0.008855926, z: 0.044891458}
+          q: {x: -0.034444377, y: -0.06338601, z: 0.04469647, w: 0.99639255}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.049479637, y: 0.00790027, z: 0.001797707}
+          q: {x: 0.026036432, y: -0.066077076, z: 0.29906857, w: 0.951585}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.027952032, y: 0.0013121883, z: -0.0015860783}
+          q: {x: -0.10381929, y: -0.06359262, z: 0.015133347, w: 0.99244577}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.02927598, y: 0.01671782, z: -0.00054470537}
+          q: {x: 0.056399453, y: 0.030999336, z: 0.23277503, w: 0.97039884}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.013090481, y: 0.008862946, z: 0.056633923}
+          q: {x: -0.5245723, y: -0.31635797, z: -0.024206964, w: 0.79003525}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.034324944, y: 0.00043534237, z: -0.0009694664}
+          q: {x: -0.04185724, y: 0.012840552, z: 0.15962951, w: 0.98620564}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.047388043, y: -0.0028523835, z: -0.0008884313}
+          q: {x: -0.02402186, y: 0.15076675, z: -0.2845283, w: 0.94643337}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.03682552, y: 0.004077345, z: 0.00014929118}
+          q: {x: 0.034103747, y: 0.007128312, z: 0.045880336, w: 0.9983392}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.08916446, y: 0.006269647, z: -0.00920002}
+          q: {x: 0.08405131, y: -0.07810687, z: 0.13730563, w: 0.98386073}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.047719922, y: -0.0030819932, z: -0.0002394397}
+          q: {x: 0.055427093, y: 0.02670754, z: 0.5010048, w: 0.8632547}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.028514897, y: 0.002546724, z: -0.0003023439}
+          q: {x: 0.035861358, y: 0.12110849, z: 0.24926357, w: 0.9601638}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.026499582, y: 0.0038855027, z: -0.0002877632}
+          q: {x: -0.013791619, y: 0.01176955, z: 0.11258684, w: 0.99347645}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.07842847, y: 0.015979704, z: -0.030135466}
+          q: {x: 0.2800292, y: -0.044811368, z: 0.019771764, w: 0.9587412}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.035657845, y: 0.0000005657026, z: -0.000000038547263}
+          q: {x: 0.008856735, y: 0.117397234, z: 0.42883658, w: 0.89567775}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.021661397, y: -0.00021586435, z: 0.00090852595}
+          q: {x: 0.023482246, y: 0.03772383, z: 0.09927906, w: 0.994067}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.021384371, y: 0.007273529, z: -0.0010216605}
+          q: {x: -0.009362598, y: 0.027672622, z: 0.14149003, w: 0.98950857}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.0048661935, y: -0.0003665546, z: 0.115507}
+          q: {x: 0.71075284, y: 0.18198909, z: 0.43459558, w: 0.5223381}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.4614845, y: 0.0023290962, z: 0.006108001}
+          q: {x: 0.40714908, y: 0.5703069, z: 0.54108995, w: -0.46497458}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.4442004, y: -0.009700856, z: 0.0003429995}
+          q: {x: 0.8525869, y: 0.50923645, z: 0.046322223, w: 0.10783338}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.18685824, y: 0.00000003300675, z: 0.00000039957754}
+          q: {x: 0.1550718, y: -0.00039886744, z: -0.36476132, w: 0.91809684}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.067816935, y: 0.0000000010166179, z: 0.00000020699655}
+          q: {x: -0.031634632, y: -0.77266735, z: -0.0117457155, w: 0.63391364}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.004866217, y: -0.00036688766, z: -0.115507}
+          q: {x: -0.39425862, y: 0.6786195, z: 0.60505766, w: -0.13394372}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.4614845, y: -0.0023290962, z: -0.006108001}
+          q: {x: -0.58449733, y: -0.4861243, z: -0.3685551, w: 0.53498894}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.4442004, y: 0.009700856, z: -0.0003429995}
+          q: {x: 0.70774376, y: 0.6975742, z: 0.1110446, w: -0.012579734}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.18685824, y: -0.00000003300675, z: -0.00000039957754}
+          q: {x: 0.10916857, y: 0.019785026, z: -0.27994072, w: 0.95358485}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.067816935, y: -0.0000000010166179, z: -0.00000020699655}
+          q: {x: -0.031634632, y: -0.77266735, z: -0.0117457155, w: 0.63391364}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0, y: 0, z: 0}
+          q: {x: 0, y: -0, z: -0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0, y: 0, z: 0}
+          q: {x: 0, y: -0, z: -0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0, y: 0, z: 0}
+          q: {x: 0, y: -0, z: -0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0, y: 0, z: 0}
+          q: {x: 0, y: -0, z: -0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+    m_DefaultPose:
+      data:
+        m_X:
+        - t: {x: 0, y: 0, z: 0}
+          q: {x: 0, y: 0, z: 0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.10093973, y: -0.18962738, z: -0.099715136}
+          q: {x: 0.02724295, y: 0.2893299, z: 0.061667666, w: 0.95485246}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 4.422791e-16, y: 1.0404824, z: 0.008740212}
+          q: {x: 0.5158441, y: -0.48363784, z: -0.5158434, w: 0.48363715}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.17225586, y: -0.015851138, z: 0.00000003044324}
+          q: {x: 0.99792284, y: 0.061774768, z: 0.009996199, w: 0.015298352}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.1349213, y: -0.023190534, z: 0.000000007649888}
+          q: {x: -0.025172533, y: 0.051427774, z: 0.12492039, w: 0.9905132}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.14818832, y: -0.0062230867, z: 0.0000000039895833}
+          q: {x: 0.9621668, y: 0.26770723, z: -0.050374035, w: 0.0055118124}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.16515428, y: 0.00009064284, z: -2.4871763e-17}
+          q: {x: 0.025688589, y: 0.038056403, z: 0.016193192, w: 0.9988141}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.12698515, y: 0, z: -3.004541e-17}
+          q: {x: 0.028115692, y: 0.016230714, z: -0.117923856, w: 0.99249184}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.20520057, y: -2.1884716e-14, z: -2.7755575e-19}
+          q: {x: 0.6221125, y: -0.33723205, z: -0.6214402, w: -0.33624798}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.0871375, y: 0.00022339018, z: -0.014451526}
+          q: {x: -0.5743774, y: -0.35630232, z: -0.5380367, w: 0.5036426}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.15247923, y: -0.0007761365, z: 0.011763243}
+          q: {x: 0.332414, y: 0.41877595, z: -0.24858077, w: 0.8076728}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.31486273, y: -5.684342e-16, z: 7.105427e-17}
+          q: {x: -0.53474206, y: -0.17240502, z: 0.78296494, w: -0.2670079}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.13479279, y: 2.842171e-16, z: 0}
+          q: {x: 0.8504915, y: -0.14052245, z: -0.08831454, w: -0.49911746}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.15255566, y: 0.0025455025, z: 0.001566454}
+          q: {x: 0.44310677, y: 0.045547646, z: -0.09154812, w: 0.8906182}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.09309238, y: -0.000020072603, z: 0.009763584}
+          q: {x: 0.98656684, y: 0.11059021, z: 0.08164666, w: 0.0882583}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.06018992, y: -0.0008488519, z: 0.00014331551}
+          q: {x: -0.37334695, y: -0.11214716, z: 0.78141284, w: 0.48726696}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.032672055, y: 0.000003705309, z: 0.00031595747}
+          q: {x: 0.6396201, y: 0.028764674, z: 0.51843214, w: 0.5668218}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.03139352, y: -0.0028641266, z: 0.0035967543}
+          q: {x: 0.24262103, y: 0.78870654, z: -0.56176704, w: -0.05911701}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.09500461, y: 0.01908212, z: 0.027230162}
+          q: {x: 0.91781086, y: 0.10443882, z: 0.050078508, w: 0.3797472}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.049479295, y: -0.007900492, z: -0.0017969696}
+          q: {x: 0.023878407, y: -0.055550843, z: 0.15511923, w: 0.9860436}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.027953245, y: -0.0013125371, z: 0.0015861632}
+          q: {x: -0.27657434, y: -0.08594135, z: 0.041027583, w: 0.95626223}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.029275374, y: -0.015793702, z: -0.0055089914}
+          q: {x: 0.14323646, y: 0.92566633, z: -0.21105717, w: -0.27942812}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.020803988, y: 0.04750479, z: 0.027708422}
+          q: {x: 0.88551456, y: -0.19689842, z: -0.10676801, w: 0.40705723}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.034341685, y: -2.6201262e-16, z: -1.5911751e-16}
+          q: {x: 0.9739778, y: -0.0108183175, z: -0.22074208, w: -0.05023101}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.04739018, y: -0.00074160856, z: 0.0028931787}
+          q: {x: 0.9688058, y: 0.16145687, z: 0.14827344, w: 0.1155943}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.036814675, y: -0.0018234294, z: 0.0037512782}
+          q: {x: 0.02715915, y: -0.7316933, z: 0.10256785, w: 0.6733254}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.087032326, y: -0.012558273, z: -0.018490369}
+          q: {x: 0.9699398, y: -0.038377378, z: 0.117915355, w: 0.2093797}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.0477196, y: 0.0030816912, z: 0.00023942794}
+          q: {x: 0.2679676, y: 0.32480112, z: 0.7256813, w: 0.5441362}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.02851684, y: -0.0015920638, z: 0.002011001}
+          q: {x: 0.30995333, y: 0.5919209, z: 0.162671, w: 0.72601426}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.026495606, y: -0.00011475478, z: 0.0038941605}
+          q: {x: -0.14878878, y: -0.5658018, z: 0.8003567, w: -0.13099408}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.07350107, y: -0.021223558, z: -0.038230717}
+          q: {x: -0.74257797, y: -0.09086778, z: -0.023675043, w: 0.6631444}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.035658944, y: 2.734271e-16, z: 4.178949e-17}
+          q: {x: 0.6393049, y: -0.39697534, z: -0.6228739, w: -0.21384105}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.021659419, y: 0.0008476322, z: -0.00039221018}
+          q: {x: 0.123351105, y: -0.2314674, z: 0.4225208, w: 0.8675734}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.021386303, y: -0.006474029, z: -0.0034692015}
+          q: {x: 0.31604862, y: 0.8547174, z: 0.41171843, w: -0.0077130254}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.0871326, y: 0.00022361781, z: 0.0144515745}
+          q: {x: 0.5167545, y: 0.5389843, z: 0.53479415, w: -0.39554507}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.15293275, y: 0.00059061445, z: -0.00061949587}
+          q: {x: 0.417659, y: -0.3126248, z: 0.37044427, w: 0.76850355}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.31486264, y: 0.0000016676835, z: 0.000000062966805}
+          q: {x: 0.14726275, y: -0.64603776, z: 0.13661486, w: 0.73640025}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.13479559, y: 0.0000017437421, z: 0.0000059898384}
+          q: {x: -0.6006457, y: 0.032086693, z: -0.0042237905, w: 0.79886}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.15255456, y: -0.0025434312, z: -0.001566781}
+          q: {x: 0.9977046, y: -0.064703, z: -0.011034286, w: -0.016653774}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.09133868, y: -0.007543264, z: 0.01902577}
+          q: {x: -0.0049590794, y: -0.07361065, z: 0.11856751, w: 0.9902013}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.06018834, y: 0.0007895774, z: 0.0003412886}
+          q: {x: 0.028078247, y: -0.007982821, z: 0.39939022, w: 0.91631615}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.032675825, y: -0.00022781694, z: -0.00021944364}
+          q: {x: 0.04457732, y: 0.025624942, z: 0.30162078, w: 0.9520405}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.03139194, y: 0.004574911, z: -0.00045857352}
+          q: {x: -0.016950676, y: -0.010455883, z: 0.040503092, w: 0.99898094}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.08965448, y: -0.008855926, z: 0.044891458}
+          q: {x: -0.034444377, y: -0.06338601, z: 0.04469647, w: 0.99639255}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.049479637, y: 0.00790027, z: 0.001797707}
+          q: {x: 0.026036432, y: -0.066077076, z: 0.29906857, w: 0.951585}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.027952032, y: 0.0013121883, z: -0.0015860783}
+          q: {x: -0.10381929, y: -0.06359262, z: 0.015133347, w: 0.99244577}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.02927598, y: 0.01671782, z: -0.00054470537}
+          q: {x: 0.056399453, y: 0.030999336, z: 0.23277503, w: 0.97039884}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.013090481, y: 0.008862946, z: 0.056633923}
+          q: {x: -0.5245723, y: -0.31635797, z: -0.024206964, w: 0.79003525}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.034324944, y: 0.00043534237, z: -0.0009694664}
+          q: {x: -0.04185724, y: 0.012840552, z: 0.15962951, w: 0.98620564}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.047388043, y: -0.0028523835, z: -0.0008884313}
+          q: {x: -0.02402186, y: 0.15076675, z: -0.2845283, w: 0.94643337}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.03682552, y: 0.004077345, z: 0.00014929118}
+          q: {x: 0.034103747, y: 0.007128312, z: 0.045880336, w: 0.9983392}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.08916446, y: 0.006269647, z: -0.00920002}
+          q: {x: 0.08405131, y: -0.07810687, z: 0.13730563, w: 0.98386073}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.047719922, y: -0.0030819932, z: -0.0002394397}
+          q: {x: 0.055427093, y: 0.02670754, z: 0.5010048, w: 0.8632547}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.028514897, y: 0.002546724, z: -0.0003023439}
+          q: {x: 0.035861358, y: 0.12110849, z: 0.24926357, w: 0.9601638}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.026499582, y: 0.0038855027, z: -0.0002877632}
+          q: {x: -0.013791619, y: 0.01176955, z: 0.11258684, w: 0.99347645}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.07842847, y: 0.015979704, z: -0.030135466}
+          q: {x: 0.2800292, y: -0.044811368, z: 0.019771764, w: 0.9587412}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.035657845, y: 0.0000005657026, z: -0.000000038547263}
+          q: {x: 0.008856735, y: 0.117397234, z: 0.42883658, w: 0.89567775}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.021661397, y: -0.00021586435, z: 0.00090852595}
+          q: {x: 0.023482246, y: 0.03772383, z: 0.09927906, w: 0.994067}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.021384371, y: 0.007273529, z: -0.0010216605}
+          q: {x: -0.009362598, y: 0.027672622, z: 0.14149003, w: 0.98950857}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.0048661935, y: -0.0003665546, z: 0.115507}
+          q: {x: 0.71075284, y: 0.18198909, z: 0.43459558, w: 0.5223381}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.4614845, y: 0.0023290962, z: 0.006108001}
+          q: {x: 0.40714908, y: 0.5703069, z: 0.54108995, w: -0.46497458}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.4442004, y: -0.009700856, z: 0.0003429995}
+          q: {x: 0.8525869, y: 0.50923645, z: 0.046322223, w: 0.10783338}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.18685824, y: 0.00000003300675, z: 0.00000039957754}
+          q: {x: 0.1550718, y: -0.00039886744, z: -0.36476132, w: 0.91809684}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.067816935, y: 0.0000000010166179, z: 0.00000020699655}
+          q: {x: -0.031634632, y: -0.77266735, z: -0.0117457155, w: 0.63391364}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: 0.004866217, y: -0.00036688766, z: -0.115507}
+          q: {x: -0.39425862, y: 0.6786195, z: 0.60505766, w: -0.13394372}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.4614845, y: -0.0023290962, z: -0.006108001}
+          q: {x: -0.58449733, y: -0.4861243, z: -0.3685551, w: 0.53498894}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.4442004, y: 0.009700856, z: -0.0003429995}
+          q: {x: 0.70774376, y: 0.6975742, z: 0.1110446, w: -0.012579734}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.18685824, y: -0.00000003300675, z: -0.00000039957754}
+          q: {x: 0.10916857, y: 0.019785026, z: -0.27994072, w: 0.95358485}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0.067816935, y: -0.0000000010166179, z: -0.00000020699655}
+          q: {x: -0.031634632, y: -0.77266735, z: -0.0117457155, w: 0.63391364}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0, y: 0, z: 0}
+          q: {x: 0, y: -0, z: -0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0, y: 0, z: 0}
+          q: {x: 0, y: -0, z: -0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0, y: 0, z: 0}
+          q: {x: 0, y: -0, z: -0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+        - t: {x: -0, y: 0, z: 0}
+          q: {x: 0, y: -0, z: -0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+    m_SkeletonNameIDArray: 000000009d380584006d2415521475397baa8006c1fb899f7c12d64bb33234cc4dc10a743356558ddcede9a260d96d90e2e2a517be3c5f5fd53dfb6d6f6cf2f4f95cf583fd618d288bf8684331a961daa79966ad9c832491f787fb254dd6f2bcdbe6f5cb09b56e0d35113db48f40342d1970335aafbd59cae78ba9a95ddaa030cbeaa7472169983862187ccfa977b9bd49e4bb0bc05c935697e92f7ff783cd2c4dd2c4b5dbe2c3c29de5b8a620baac719aeba5e80cdba29f011a4f1a5cc53f17e694368e70a431f9942c0586195913a8a3081a3135381d46f5ca781f4cc96d9bf698640260a86375bcf0f3b37ef2c73d728937508b92c291284a523b31eef4e2c71a557f0713674fa247b2b1017784a060a0dda0d82379f24e137e85f442771c6272706b
+    m_Human:
+      data:
+        serializedVersion: 2
+        m_RootX:
+          t: {x: 0, y: 0, z: 0}
+          q: {x: 0, y: 0, z: 0, w: 1}
+          s: {x: 1, y: 1, z: 1}
+        m_Skeleton:
+          data:
+            m_Node: []
+            m_ID: 
+            m_AxesArray: []
+        m_SkeletonPose:
+          data:
+            m_X: []
+        m_LeftHand:
+          data:
+            m_HandBoneIndex: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+        m_RightHand:
+          data:
+            m_HandBoneIndex: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+        m_HumanBoneIndex: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+        m_HumanBoneMass:
+        - 0.14545456
+        - 0.12121213
+        - 0.12121213
+        - 0.048484854
+        - 0.048484854
+        - 0.009696971
+        - 0.009696971
+        - 0.030303033
+        - 0.14545456
+        - 0.14545456
+        - 0.012121214
+        - 0.048484854
+        - 0.006060607
+        - 0.006060607
+        - 0.024242427
+        - 0.024242427
+        - 0.01818182
+        - 0.01818182
+        - 0.006060607
+        - 0.006060607
+        - 0.0024242427
+        - 0.0024242427
+        - 0
+        - 0
+        - 0
+        m_Scale: 1
+        m_ArmTwist: 0.5
+        m_ForeArmTwist: 0.5
+        m_UpperLegTwist: 0.5
+        m_LegTwist: 0.5
+        m_ArmStretch: 0.05
+        m_LegStretch: 0.05
+        m_FeetSpacing: 0
+        m_HasLeftHand: 0
+        m_HasRightHand: 0
+        m_HasTDoF: 0
+    m_HumanSkeletonIndexArray: 
+    m_HumanSkeletonReverseIndexArray: 
+    m_RootMotionBoneIndex: -1
+    m_RootMotionBoneX:
+      t: {x: 0, y: 0, z: 0}
+      q: {x: 0, y: 0, z: 0, w: 1}
+      s: {x: 1, y: 1, z: 1}
+    m_RootMotionSkeleton:
+      data:
+        m_Node: []
+        m_ID: 
+        m_AxesArray: []
+    m_RootMotionSkeletonPose:
+      data:
+        m_X: []
+    m_RootMotionSkeletonIndexArray: 
+  m_TOS:
+    1884034301: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandThumb1/genAssault_RightHandThumb2/genAssault_RightHandThumb3/genAssault_RightHandThumb_End
+    3088567931: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandThumb1
+    2705955581: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm
+    742415084: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandMiddle1/genAssault_LeftHandMiddle2/genAssault_LeftHandMiddle3/genAssault_LeftHandMiddle_End
+    1589908391: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandThumb1/genAssault_LeftHandThumb2/genAssault_LeftHandThumb3
+    1810707253: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand
+    3970578796: genAssault_reference/genAssault_Hips/genAssault_RightUpLeg/genAssault_RightLeg
+    813580502: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandRing1/genAssault_LeftHandRing2/genAssault_LeftHandRing3/genAssault_LeftHandRing_End
+    2806001953: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder
+    2025760545: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandIndex1/genAssault_RightHandIndex2
+    1877563080: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandIndex1
+    4175034323: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandMiddle1/genAssault_RightHandMiddle2/genAssault_RightHandMiddle3
+    3780935467: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandPinky1/genAssault_LeftHandPinky2
+    876986987: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandPinky1
+    2540112771: genAssault_reference/genAssault_Hips/genAssault_LeftUpLeg/genAssault_LeftLeg
+    3346635363: genAssault_reference/genAssault_Hips/genAssault_LeftUpLeg/genAssault_LeftLeg/genAssault_LeftFoot
+    3675925395: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_Neck/genAssault_Head
+    964697881: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandThumb1/genAssault_RightHandThumb2
+    3834138302: genAssault_reference/genAssault_Hips/genAssault_RightUpLeg/genAssault_RightLeg/genAssault_RightFoot/genAssault_RightToeBase
+    2305302167: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandMiddle1
+    2406382892: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandMiddle1/genAssault_RightHandMiddle2
+    477577972: genAssault_LOD2
+    396269932: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm
+    3092608643: genAssault_reference/genAssault_Hips/genAssault_LeftUpLeg/genAssault_LeftLeg/genAssault_LeftFoot/genAssault_LeftToeBase
+    1847294571: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand
+    866336205: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll
+    2181213265: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandMiddle1
+    1219308562: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm
+    3701198818: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1
+    3307312874: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandIndex1/genAssault_LeftHandIndex2/genAssault_LeftHandIndex3/genAssault_LeftHandIndex_End
+    1659402800: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder
+    2807500997: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll
+    859534749: genAssault_reference/genAssault_Hips/genAssault_LeftUpLeg/genAssault_LeftLeg/genAssault_LeftFoot/genAssault_LeftToeBase/genAssault_LeftToes_End
+    2214934685: genAssault_reference
+    376324754: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_Neck/genAssault_Head/genAssault_Head_End
+    2216628359: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_Neck
+    2253581972: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandRing1/genAssault_RightHandRing2/genAssault_RightHandRing3
+    3530984315: genAssault_reference/genAssault_Hips/genAssault_Spine
+    2023771885: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandThumb1/genAssault_RightHandThumb2/genAssault_RightHandThumb3
+    840622844: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandRing1/genAssault_RightHandRing2/genAssault_RightHandRing3/genAssault_RightHandRing_End
+    3871548039: genAssault_reference/genAssault_Hips/genAssault_RightUpLeg/genAssault_RightLeg/genAssault_RightFoot
+    14632464: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandPinky1/genAssault_LeftHandPinky2/genAssault_LeftHandPinky3/genAssault_LeftHandPinky_End
+    319443464: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandMiddle1/genAssault_LeftHandMiddle2/genAssault_LeftHandMiddle3
+    1375926608: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandIndex1/genAssault_LeftHandIndex2
+    3733238023: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandIndex1
+    4068025304: genAssault_LOD0
+    1802531426: genAssault_LOD3
+    2239632206: genAssault_LOD1
+    2459059272: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2
+    1799897874: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandRing1/genAssault_LeftHandRing2/genAssault_LeftHandRing3
+    246787277: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandThumb1/genAssault_LeftHandThumb2/genAssault_LeftHandThumb3/genAssault_LeftHandThumb_End
+    341253543: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandIndex1/genAssault_RightHandIndex2/genAssault_RightHandIndex3
+    2315465392: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandRing1
+    2599383028: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandRing1/genAssault_LeftHandRing2
+    3814188156: genAssault_reference/genAssault_Hips
+    172459316: genAssault_reference/genAssault_Hips/genAssault_LeftUpLeg
+    4070437146: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandIndex1/genAssault_LeftHandIndex2/genAssault_LeftHandIndex3
+    3916116542: genAssault_reference/genAssault_Hips/genAssault_RightUpLeg
+    3214981188: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandMiddle1/genAssault_RightHandMiddle2/genAssault_RightHandMiddle3/genAssault_RightHandMiddle_End
+    3810344668: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm
+    0: 
+    2890422836: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandPinky1/genAssault_RightHandPinky2/genAssault_RightHandPinky3
+    301321855: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandPinky1/genAssault_RightHandPinky2
+    1836290684: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandRing1/genAssault_RightHandRing2
+    2234000804: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandPinky1
+    3269516317: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandIndex1/genAssault_RightHandIndex2/genAssault_RightHandIndex3/genAssault_RightHandIndex_End
+    2602002525: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandThumb1/genAssault_LeftHandThumb2
+    159001012: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandThumb1
+    3960330635: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandRing1
+    1195836614: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandMiddle1/genAssault_LeftHandMiddle2
+    1184187703: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_RightShoulder/genAssault_RightArm/genAssault_RightForeArm/genAssault_RightForeArmRoll/genAssault_RightHand/genAssault_RightHandPinky1/genAssault_RightHandPinky2/genAssault_RightHandPinky3/genAssault_RightHandPinky_End
+    2755224778: genAssault_reference/genAssault_Hips/genAssault_RightUpLeg/genAssault_RightLeg/genAssault_RightFoot/genAssault_RightToeBase/genAssault_RightToes_End
+    3723491618: genAssault_reference/genAssault_Hips/genAssault_Spine/genAssault_Spine1/genAssault_Spine2/genAssault_LeftShoulder/genAssault_LeftArm/genAssault_LeftForeArm/genAssault_LeftForeArmRoll/genAssault_LeftHand/genAssault_LeftHandPinky1/genAssault_LeftHandPinky2/genAssault_LeftHandPinky3
+  m_HumanDescription:
+    serializedVersion: 3
+    m_Human: []
+    m_Skeleton: []
+    m_ArmTwist: 0.5
+    m_ForeArmTwist: 0.5
+    m_UpperLegTwist: 0.5
+    m_LegTwist: 0.5
+    m_ArmStretch: 0.05
+    m_LegStretch: 0.05
+    m_FeetSpacing: 0
+    m_GlobalScale: 1
+    m_RootMotionBoneName: 
+    m_HasTranslationDoF: 0
+    m_HasExtraRoot: 0
+    m_SkeletonHasParents: 1
