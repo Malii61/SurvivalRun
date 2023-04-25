@@ -14,6 +14,11 @@ public class SoldiersController : MonoBehaviour
     [SerializeField] private float leftAndRightSpeed;
     [SerializeField] private float forwardSpeed;
     [SerializeField] private TextMeshProUGUI soldiersPointUIText;
+    private Rigidbody rb;
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
     private void LateUpdate()
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -47,11 +52,11 @@ public class SoldiersController : MonoBehaviour
     }
     private float GetHorizontalAxis()
     {
-        #if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
             return Input.GetTouch(0).deltaPosition.x;
-        #else
-            return Input.GetAxis("Horizontal");
-        #endif 
+#else
+        return Input.GetAxis("Horizontal");
+#endif
     }
     private void Move(float moveValue)
     {
@@ -59,11 +64,13 @@ public class SoldiersController : MonoBehaviour
         float horizontalAxisValue = GetHorizontalAxis();
         for (int i = 1; i < transform.childCount; i++)
         {
-            if(transform.GetChild(i).TryGetComponent(out Animator anim)){
+            if (transform.GetChild(i).TryGetComponent(out Animator anim))
+            {
                 anim.SetFloat("Horizontal", horizontalAxisValue);
             }
         }
-        transform.Translate(forwardSpeed * Time.deltaTime, 0, -adjustedHorizontalMove);
+        rb.MovePosition(transform.position + new Vector3(forwardSpeed * Time.deltaTime, 0, -adjustedHorizontalMove));
+        //transform.Translate(forwardSpeed * Time.deltaTime, 0, -adjustedHorizontalMove);
     }
     private float CheckPositionClamper(float horizontalMove)
     {

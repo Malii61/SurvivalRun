@@ -1918,6 +1918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 646905346521686898}
+  soldierBody: {fileID: 1853202191209313804}
 --- !u!135 &1581182872008139603
 SphereCollider:
   m_ObjectHideFlags: 0

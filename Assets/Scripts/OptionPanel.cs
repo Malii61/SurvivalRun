@@ -10,6 +10,8 @@ public class OptionPanel : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        if (!other.transform.TryGetComponent(out SoldiersController controller))
+            return;
         int result = MathematicalOperationCalculator.FindResult(mathematicalOperationText.text);
         Debug.Log(result);
         PointManager.Instance.SetPoint(PersonType.soldier, result);
