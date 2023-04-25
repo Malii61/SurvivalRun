@@ -18,4 +18,4 @@ MonoBehaviour:
   attackSpeed: 1
   health: 100
   damage: 30
-  zombieCountRequired: 1
+  zombiePointRequired: 1

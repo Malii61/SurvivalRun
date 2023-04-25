@@ -13,6 +13,7 @@ public class Zombie : MonoBehaviour
     private int maxHealth;
     private int damage;
     private float attackTimer;
+    private int zombiePoint;
     [SerializeField] HealthBar healthBar;
     private void Awake()
     {
@@ -27,6 +28,7 @@ public class Zombie : MonoBehaviour
         attackSpeed = zombieSO.attackSpeed;
         SetHealth(zombieSO.health);
         damage = zombieSO.damage;
+        zombiePoint = zombieSO.zombiePointRequired;
     }
     private void SoldierCreator_OnCreatedNewSoldiers(object sender, System.EventArgs e)
     {
@@ -90,6 +92,7 @@ public class Zombie : MonoBehaviour
     }
     private void Die()
     {
+        transform.GetComponentInParent<ZombiePlatform>().DecreaseZombiePoint(zombiePoint);
         Destroy(gameObject);
     }
 }

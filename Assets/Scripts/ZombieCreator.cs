@@ -19,11 +19,11 @@ public class ZombieCreator : MonoBehaviour
         int zombiesPoint = PointManager.Instance.GetPoint(PersonType.zombie);
         for (int i = zombies.Count - 1; i >= 0; i--)
         {
-            if (zombiesPoint < zombies[i].zombieCountRequired)
+            if (zombiesPoint < zombies[i].zombiePointRequired)
                 continue;
-            int count = zombiesPoint / zombies[i].zombieCountRequired;
+            int count = zombiesPoint / zombies[i].zombiePointRequired;
             CreateZombie(zombies[i], count);
-            zombiesPoint -= zombies[i].zombieCountRequired * count;
+            zombiesPoint -= zombies[i].zombiePointRequired * count;
         }
     }
     public void SetZombieSpawnTransform(Transform transform)

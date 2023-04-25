@@ -7,5 +7,5 @@ public class ZombieSO : ScriptableObject
     public float attackSpeed;
     public int health;
     public int damage;
-    public int zombieCountRequired;
+    public int zombiePointRequired;
 }

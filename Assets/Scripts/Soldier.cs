@@ -10,6 +10,7 @@ public class Soldier : MonoBehaviour
     private int damage;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] SoldierAnimationController soldierAnimationController;
+    [SerializeField] Gun gun;
     public void InitializeSoldier(SoldierSO soldierSO)
     {
         SetHealth(soldierSO.health);
@@ -27,6 +28,7 @@ public class Soldier : MonoBehaviour
                 soldierAnimationController.SetTargetPosition(zombie.transform.position);
                 if (fireRateTimer >= fireRate)
                 {
+                    gun.FireBullet(zombie.transform.position);
                     zombie.GetDamage(damage);
                     fireRateTimer = 0;
                 }
