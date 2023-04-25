@@ -70,7 +70,6 @@ public class SoldiersController : MonoBehaviour
             }
         }
         rb.MovePosition(transform.position + new Vector3(forwardSpeed * Time.deltaTime, 0, -adjustedHorizontalMove));
-        //transform.Translate(forwardSpeed * Time.deltaTime, 0, -adjustedHorizontalMove);
     }
     private float CheckPositionClamper(float horizontalMove)
     {

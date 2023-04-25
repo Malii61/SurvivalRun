@@ -3,26 +3,38 @@ using TMPro;
 public class OptionPanel : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI mathematicalOperationText;
-
+    [SerializeField] Collider otherPanelCollider;
+    private bool triggered;
     private void Start()
     {
         RefreshOperationText();
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (!other.transform.TryGetComponent(out SoldiersController controller))
+        if (triggered || !other.transform.TryGetComponent(out SoldiersController controller))
             return;
+        // destroy the other collider in case player triggers it
+        Destroy(otherPanelCollider);
+        triggered = true;
+
+        // set soldier point
         int result = MathematicalOperationCalculator.FindResult(mathematicalOperationText.text);
-        Debug.Log(result);
         PointManager.Instance.SetPoint(PersonType.soldier, result);
+
+        // create soldiers according to soldier point
         SoldierCreator.Instance.CreateSoldiers();
+
+        // create next platform
         PlatformManager.Instance.CreatePlatform();
+
+        // set math operation of next panel
         RefreshOperationText();
     }
-
     private void RefreshOperationText()
     {
         MathematicalOperations operations = new MathematicalOperations();
+
+        //choose random operation from list
         mathematicalOperationText.text = operations.operationsList[Random.Range(0, operations.operationsList.Count)];
     }
 }

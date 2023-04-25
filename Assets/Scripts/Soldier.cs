@@ -1,8 +1,7 @@
 using UnityEngine;
-
 public class Soldier : MonoBehaviour
 {
-    private float range = 5f;
+    private float range = 9f;
     private int health;
     private int maxHealth;
     private float fireRate;
@@ -10,6 +9,7 @@ public class Soldier : MonoBehaviour
     private float fireRateTimer;
     private int damage;
     [SerializeField] private HealthBar healthBar;
+    [SerializeField] SoldierAnimationController soldierAnimationController;
     public void InitializeSoldier(SoldierSO soldierSO)
     {
         SetHealth(soldierSO.health);
@@ -24,12 +24,17 @@ public class Soldier : MonoBehaviour
         {
             if (collider.transform.TryGetComponent(out Zombie zombie))
             {
-                if(fireRateTimer >= fireRate)
+                soldierAnimationController.SetTargetPosition(zombie.transform.position);
+                if (fireRateTimer >= fireRate)
                 {
                     zombie.GetDamage(damage);
                     fireRateTimer = 0;
                 }
                 break;
+            }
+            else
+            {
+                soldierAnimationController.SetTargetPosition(Vector3.zero);
             }
         }
         fireRateTimer += Time.fixedDeltaTime;

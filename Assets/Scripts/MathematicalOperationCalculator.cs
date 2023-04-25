@@ -20,7 +20,6 @@ public static class MathematicalOperationCalculator
         object res = table.Compute(AdjustExpression(expression), "");
         Debug.Log(res);
         res = Convert.ToInt32(res);
-        Debug.Log(res);
         return (int)res;
     }
 
