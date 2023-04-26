@@ -9,12 +9,12 @@ public class OptionPanel : MonoBehaviour
     {
         RefreshOperationText();
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (triggered || !other.transform.TryGetComponent(out SoldiersController controller))
             return;
         // destroy the other collider in case player triggers it
-        Destroy(otherPanelCollider);
+        otherPanelCollider.enabled = false;
         triggered = true;
 
         // set soldier point
@@ -36,5 +36,11 @@ public class OptionPanel : MonoBehaviour
 
         //choose random operation from list
         mathematicalOperationText.text = operations.operationsList[Random.Range(0, operations.operationsList.Count)];
+    }
+    public void ResetPanel()
+    {
+        otherPanelCollider.enabled = true;
+        triggered = false;
+        mathematicalOperationText.enabled = true;
     }
 }

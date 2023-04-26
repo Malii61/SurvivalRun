@@ -9,7 +9,7 @@ public class Zombie : MonoBehaviour
     private Transform target;
     private bool isMoved = false;
     private float attackSpeed;
-    private int health = 25;
+    private int health = 100000;
     private int maxHealth;
     private int damage;
     private float attackTimer;

@@ -4,6 +4,7 @@ public class ZombiePlatform : MonoBehaviour
 {
     [SerializeField] Transform zombieSpawnTransform;
     [SerializeField] TextMeshProUGUI zombiePointText;
+    [SerializeField] OptionPanel[] optionPanels;
     private int zombiePoint;
     public void SetPlatform()
     {
@@ -12,6 +13,10 @@ public class ZombiePlatform : MonoBehaviour
         zombiePointText.text = zombiePoint.ToString();
         ZombieCreator.Instance.SetZombieSpawnTransform(zombieSpawnTransform); 
         ZombieCreator.Instance.CreateZombies();
+        foreach(var optionPanel in optionPanels)
+        {
+            optionPanel.ResetPanel();
+        }
     }
     public void DecreaseZombiePoint(int point)
     {

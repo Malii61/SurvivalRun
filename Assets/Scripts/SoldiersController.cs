@@ -45,7 +45,7 @@ public class SoldiersController : MonoBehaviour
         }
 #else
 
-        float horizontalMove = Input.GetAxis("Horizontal") * leftAndRightSpeed * Time.deltaTime;
+        float horizontalMove = Input.GetAxis("Horizontal") * leftAndRightSpeed;
         Move(horizontalMove);
 #endif 
         soldiersPointUIText.text = PointManager.Instance.GetPoint(PersonType.soldier).ToString();
@@ -69,7 +69,8 @@ public class SoldiersController : MonoBehaviour
                 anim.SetFloat("Horizontal", horizontalAxisValue);
             }
         }
-        rb.MovePosition(transform.position + new Vector3(forwardSpeed * Time.deltaTime, 0, -adjustedHorizontalMove));
+        rb.MovePosition(transform.position + new Vector3(forwardSpeed * Time.deltaTime, 0, 0));
+        rb.velocity = new Vector3(0, 0, -adjustedHorizontalMove);
     }
     private float CheckPositionClamper(float horizontalMove)
     {

@@ -19,5 +19,5 @@ MonoBehaviour:
   soldierOrder: 1
   soldierPointRequired: 1
   gunType: 0
-  damage: 20
+  damage: 30
   fireRate: 1

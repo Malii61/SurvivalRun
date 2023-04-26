@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 public class Soldier : MonoBehaviour
 {
@@ -8,9 +9,15 @@ public class Soldier : MonoBehaviour
     private int soldierPoint;
     private float fireRateTimer;
     private int damage;
+    private Quaternion firstRotation;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] SoldierAnimationController soldierAnimationController;
     [SerializeField] Gun gun;
+    private float damping = 20f;
+    private void Start()
+    {
+        firstRotation = transform.rotation;
+    }
     public void InitializeSoldier(SoldierSO soldierSO)
     {
         SetHealth(soldierSO.health);
@@ -25,7 +32,7 @@ public class Soldier : MonoBehaviour
         {
             if (collider.transform.TryGetComponent(out Zombie zombie))
             {
-                soldierAnimationController.SetTargetPosition(zombie.transform.position);
+                RotateSoldier(zombie.transform.position);
                 if (fireRateTimer >= fireRate)
                 {
                     gun.Fire(zombie.transform.position);
@@ -36,11 +43,29 @@ public class Soldier : MonoBehaviour
             }
             else
             {
-                soldierAnimationController.SetTargetPosition(Vector3.zero);
+                //rotate soldier the first rotation value
+                RotateSoldier(Vector3.zero);
             }
         }
         fireRateTimer += Time.fixedDeltaTime;
     }
+
+    private void RotateSoldier(Vector3 zombiePos)
+    {
+        var lookDir = zombiePos - transform.position;
+        lookDir.y = 0;
+        Quaternion rotation;
+        if(zombiePos == Vector3.zero)
+        {
+            rotation = firstRotation;
+        }
+        else
+        {
+            rotation = Quaternion.LookRotation(lookDir);
+        }
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
+    }
+
     public void SetHealth(int _health)
     {
         maxHealth = _health;

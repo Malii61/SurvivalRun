@@ -8,7 +8,7 @@ public class PointManager : MonoBehaviour
 {
     public static PointManager Instance { get; private set; }
     private int zombiesPoint = 5;
-    private int soldiersPoint = 12;
+    private int soldiersPoint = 100;
     private void Awake()
     {
         Instance = this;
