@@ -15,8 +15,10 @@ public class Zombie : MonoBehaviour
     private float attackTimer;
     private int zombiePoint;
     [SerializeField] HealthBar healthBar;
+    private Animator animator;
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
     }
     private void Start()
@@ -47,7 +49,7 @@ public class Zombie : MonoBehaviour
     {
         SoldierCreator.Instance.OnCreatedNewSoldiers -= SoldierCreator_OnCreatedNewSoldiers;
     }
-  
+
 
     private void FixedUpdate()
     {
@@ -63,6 +65,7 @@ public class Zombie : MonoBehaviour
             {
                 if (collider.transform.TryGetComponent(out Soldier soldier))
                 {
+                    animator.SetBool("isRunning", true);
                     target = soldier.transform;
                     agent.SetDestination(target.position);
                     isMoved = true;
@@ -76,6 +79,7 @@ public class Zombie : MonoBehaviour
             float distance = Vector3.Distance(target.position, transform.position);
             if (distance <= agent.stoppingDistance && attackTimer >= attackSpeed)
             {
+                animator.SetBool("isAttacking", true);
                 target.GetComponent<Soldier>().GetDamage(damage);
                 attackTimer = 0;
             }
@@ -85,6 +89,7 @@ public class Zombie : MonoBehaviour
 
     public void GetDamage(int damage)
     {
+        animator.SetBool("isHit", true);
         health -= damage;
         if (health <= damage)
             Die();
@@ -94,5 +99,10 @@ public class Zombie : MonoBehaviour
     {
         transform.GetComponentInParent<ZombiePlatform>().DecreaseZombiePoint(zombiePoint);
         Destroy(gameObject);
+    }
+    public void SetAnimatorBool(AnimationEvent animationEvent)
+    {
+        bool animBool = animationEvent.intParameter == 1;
+        animator.SetBool(animationEvent.stringParameter, animBool);
     }
 }

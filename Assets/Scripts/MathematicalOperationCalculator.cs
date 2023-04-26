@@ -18,7 +18,6 @@ public static class MathematicalOperationCalculator
     public static int FindResult(string expression)
     {
         object res = table.Compute(AdjustExpression(expression), "");
-        Debug.Log(res);
         res = Convert.ToInt32(res);
         return (int)res;
     }
