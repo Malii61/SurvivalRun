@@ -28,7 +28,7 @@ public class Soldier : MonoBehaviour
                 soldierAnimationController.SetTargetPosition(zombie.transform.position);
                 if (fireRateTimer >= fireRate)
                 {
-                    gun.FireBullet(zombie.transform.position);
+                    gun.Fire(zombie.transform.position);
                     zombie.GetDamage(damage);
                     fireRateTimer = 0;
                 }

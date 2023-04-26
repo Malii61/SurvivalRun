@@ -3,6 +3,7 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     [SerializeField] Transform bullet;
+    [SerializeField] ParticleSystem muzzleEffect;
     private Vector3 bulletStartPos;
     private Vector3 bulletTargetPos;
     private void Start()
@@ -10,9 +11,10 @@ public class Gun : MonoBehaviour
         bulletStartPos = bullet.position;
         bulletTargetPos = bulletStartPos;
     }
-    public void FireBullet(Vector3 targetPos)
+    public void Fire(Vector3 targetPos)
     {
         bulletTargetPos = targetPos;
+        muzzleEffect.Play();
     }
     private void Update()
     {
