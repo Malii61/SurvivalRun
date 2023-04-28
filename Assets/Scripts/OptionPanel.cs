@@ -18,8 +18,13 @@ public class OptionPanel : MonoBehaviour
         triggered = true;
 
         // set soldier point
-        int result = MathematicalOperationCalculator.FindResult(mathematicalOperationText.text);
-        PointManager.Instance.SetPoint(PersonType.soldier, result);
+        int soldierPoint = MathematicalOperationCalculator.FindResult(mathematicalOperationText.text);
+        if (soldierPoint > PointManager.maxSoldierPoint)
+            soldierPoint = PointManager.maxSoldierPoint;
+        else if (soldierPoint <= 0)
+            SurvivalRunManager.Instance.OnGameFinished();
+
+        PointManager.Instance.SetPoint(PersonType.soldier, soldierPoint);
 
         // create soldiers according to soldier point
         SoldierCreator.Instance.CreateSoldiers();
@@ -29,6 +34,9 @@ public class OptionPanel : MonoBehaviour
 
         // set math operation of next panel
         RefreshOperationText();
+
+        // decrease forward speed in combat
+        SoldiersController.Instance.SetForwardSpeed(SoldiersController.forwardSpeedOnCombat);
     }
     private void RefreshOperationText()
     {

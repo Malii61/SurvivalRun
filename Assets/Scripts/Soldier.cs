@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 public class Soldier : MonoBehaviour
 {
-    private float range = 9f;
+    private readonly float attackRange = 7f;
     private int health;
     private int maxHealth;
     private float fireRate;
@@ -13,7 +13,7 @@ public class Soldier : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     [SerializeField] SoldierAnimationController soldierAnimationController;
     [SerializeField] Gun gun;
-    private float damping = 20f;
+    private readonly float rotationDamping = 20f;
     private void Start()
     {
         firstRotation = transform.rotation;
@@ -27,7 +27,12 @@ public class Soldier : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, range);
+        CheckZombiesAround();
+    }
+
+    private void CheckZombiesAround()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, attackRange);
         foreach (Collider collider in colliders)
         {
             if (collider.transform.TryGetComponent(out Zombie zombie))
@@ -43,7 +48,7 @@ public class Soldier : MonoBehaviour
             }
             else
             {
-                //rotate soldier the first rotation value
+                //rotate soldier to the first rotation value
                 RotateSoldier(Vector3.zero);
             }
         }
@@ -63,7 +68,7 @@ public class Soldier : MonoBehaviour
         {
             rotation = Quaternion.LookRotation(lookDir);
         }
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationDamping);
     }
 
     public void SetHealth(int _health)

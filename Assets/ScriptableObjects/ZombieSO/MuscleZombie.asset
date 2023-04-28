@@ -15,7 +15,8 @@ MonoBehaviour:
   zombieName: MuscleZombie
   zombiePrefab: {fileID: 8972003282921182877, guid: 524bb6b2b31377c4fa5d84c4bf361d14,
     type: 3}
+  movementSpeed: 10
   attackSpeed: 1
-  health: 200
-  damage: 150
-  zombiePointRequired: 10
+  health: 1000
+  damage: 3000
+  zombiePointRequired: 1000

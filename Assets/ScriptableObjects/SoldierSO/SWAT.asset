@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c80466e5faaa344bf760a201f7e788, type: 3}
+  m_Name: SWAT
+  m_EditorClassIdentifier: 
+  soldierName: SWAT
+  soldierPrefab: {fileID: 5755562942902848984, guid: 8434f220892a8844a92c91fbd327fbdd,
+    type: 3}
+  health: 20000
+  soldierPointRequired: 100000
+  gunType: 1
+  damage: 3000
+  fireRate: 0.2

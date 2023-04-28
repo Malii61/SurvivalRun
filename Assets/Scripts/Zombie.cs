@@ -1,10 +1,14 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour
 {
-    private float range = 6f;
+    private const string IS_ATTACKING = "isAttacking";
+    private const string IS_RUNNING = "isRunning";
+    private const string IS_HIT = "isHit";
+
+    private readonly float lookRange = 11f;
     private NavMeshAgent agent;
     private Transform target;
     private bool isMoved = false;
@@ -31,6 +35,7 @@ public class Zombie : MonoBehaviour
         SetHealth(zombieSO.health);
         damage = zombieSO.damage;
         zombiePoint = zombieSO.zombiePointRequired;
+        agent.speed = zombieSO.movementSpeed;
     }
     private void SoldierCreator_OnCreatedNewSoldiers(object sender, System.EventArgs e)
     {
@@ -60,12 +65,12 @@ public class Zombie : MonoBehaviour
     {
         if (target == null)
         {
-            Collider[] colliders = Physics.OverlapSphere(transform.position, range);
+            Collider[] colliders = Physics.OverlapSphere(transform.position, lookRange);
             foreach (Collider collider in colliders)
             {
                 if (collider.transform.TryGetComponent(out Soldier soldier))
                 {
-                    animator.SetBool("isRunning", true);
+                    animator.SetBool(IS_RUNNING, true);
                     target = soldier.transform;
                     agent.SetDestination(target.position);
                     isMoved = true;
@@ -79,7 +84,7 @@ public class Zombie : MonoBehaviour
             float distance = Vector3.Distance(target.position, transform.position);
             if (distance <= agent.stoppingDistance && attackTimer >= attackSpeed)
             {
-                animator.SetBool("isAttacking", true);
+                ResetAfterPlayingAnimation(IS_ATTACKING);
                 target.GetComponent<Soldier>().GetDamage(damage);
                 attackTimer = 0;
             }
@@ -89,20 +94,30 @@ public class Zombie : MonoBehaviour
 
     public void GetDamage(int damage)
     {
-        animator.SetBool("isHit", true);
+        //reset hit animation after play it
+        ResetAfterPlayingAnimation(IS_HIT);
+        // get damage
         health -= damage;
-        if (health <= damage)
+        if (health <= 0)
+            //health is lower than 0 so zombie is dead 
             Die();
         healthBar.UpdateHealthBar(health, maxHealth);
     }
     private void Die()
     {
         transform.GetComponentInParent<ZombiePlatform>().DecreaseZombiePoint(zombiePoint);
+        PointManager.Instance.IncreaseGamePoint(zombiePoint);
         Destroy(gameObject);
     }
-    public void SetAnimatorBool(AnimationEvent animationEvent)
+    public void ResetAfterPlayingAnimation(string animation)
     {
-        bool animBool = animationEvent.intParameter == 1;
-        animator.SetBool(animationEvent.stringParameter, animBool);
+        animator.SetBool(animation, true);
+        StartCoroutine(ResetAnimation(animation));
+    }
+    private IEnumerator ResetAnimation(string animation)
+    {
+        yield return new WaitForEndOfFrame();
+
+        animator.SetBool(animation, false);
     }
 }

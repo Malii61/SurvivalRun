@@ -1,16 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 public class SoldiersController : MonoBehaviour
 {
-    public enum PositionClamp
-    {
-        left,
-        right,
-        none
-    }
-    private PositionClamp positionClamp = PositionClamp.none;
+    public static SoldiersController Instance { get; private set; }
+    
+    public static float forwardSpeedOnCombat = 7;
+    public static float forwardSpeedOnNotCombat = 16;
+
     [SerializeField] private float leftAndRightSpeed;
     [SerializeField] private float forwardSpeed;
     [SerializeField] private TextMeshProUGUI soldiersPointUIText;
@@ -18,6 +14,7 @@ public class SoldiersController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        Instance = this;
     }
     private void LateUpdate()
     {
@@ -60,7 +57,6 @@ public class SoldiersController : MonoBehaviour
     }
     private void Move(float moveValue)
     {
-        float adjustedHorizontalMove = CheckPositionClamper(moveValue);
         float horizontalAxisValue = GetHorizontalAxis();
         for (int i = 1; i < transform.childCount; i++)
         {
@@ -70,13 +66,10 @@ public class SoldiersController : MonoBehaviour
             }
         }
         rb.MovePosition(transform.position + new Vector3(forwardSpeed * Time.deltaTime, 0, 0));
-        rb.velocity = new Vector3(0, 0, -adjustedHorizontalMove);
+        rb.velocity = new Vector3(0, 0, -moveValue);
     }
-    private float CheckPositionClamper(float horizontalMove)
+    public void SetForwardSpeed(float speed)
     {
-        bool isGreaterThanZero = horizontalMove > 0;
-        if ((positionClamp == PositionClamp.right && isGreaterThanZero) || (positionClamp == PositionClamp.left && !isGreaterThanZero))
-            return 0f;
-        return horizontalMove;
+        forwardSpeed = speed;
     }
 }
