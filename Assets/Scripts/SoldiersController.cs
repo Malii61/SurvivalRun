@@ -13,6 +13,8 @@ public class SoldiersController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI soldiersPointUIText;
     private Rigidbody rb;
     private float targetSpeed;
+    Touch _touch;
+    private bool _dragStarted;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -31,11 +33,11 @@ public class SoldiersController : MonoBehaviour
                 _dragStarted = true;
             }
         }
-        if (_dragStarted && !PauseMenuUI.isPauseMenuActive)
+        if (_dragStarted)
         {
             if (_touch.phase == TouchPhase.Moved)
             {
-                float x = _touch.deltaPosition.x * senstivityMultiplier;
+                float x = _touch.deltaPosition.x;
                 Move(x);
             }
             else
