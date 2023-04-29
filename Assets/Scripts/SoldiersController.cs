@@ -1,20 +1,23 @@
 using UnityEngine;
 using TMPro;
+
 public class SoldiersController : MonoBehaviour
 {
     public static SoldiersController Instance { get; private set; }
-    
-    public static float forwardSpeedOnCombat = 7;
-    public static float forwardSpeedOnNotCombat = 16;
+
+    public static float forwardSpeedOnCombat = 5;
+    public static float forwardSpeedOnNotCombat = 14;
 
     [SerializeField] private float leftAndRightSpeed;
     [SerializeField] private float forwardSpeed;
     [SerializeField] private TextMeshProUGUI soldiersPointUIText;
     private Rigidbody rb;
+    private float targetSpeed;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         Instance = this;
+        targetSpeed = forwardSpeed;
     }
     private void LateUpdate()
     {
@@ -45,8 +48,19 @@ public class SoldiersController : MonoBehaviour
         float horizontalMove = Input.GetAxis("Horizontal") * leftAndRightSpeed;
         Move(horizontalMove);
 #endif 
-        soldiersPointUIText.text = PointManager.Instance.GetPoint(PersonType.soldier).ToString();
+        SetText();
+        forwardSpeed = Mathf.Lerp(forwardSpeed, targetSpeed, 0.2f);
     }
+
+    private void SetText()
+    {
+        int soldierPoint = PointManager.Instance.GetPoint(PersonType.soldier);
+        if (soldierPoint == PointManager.maxSoldierPoint)
+            soldiersPointUIText.text = "MAX";
+        else
+            soldiersPointUIText.text = soldierPoint.ToString();
+    }
+
     private float GetHorizontalAxis()
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -70,6 +84,6 @@ public class SoldiersController : MonoBehaviour
     }
     public void SetForwardSpeed(float speed)
     {
-        forwardSpeed = speed;
+        targetSpeed = speed;
     }
 }

@@ -103,6 +103,10 @@ public class Zombie : MonoBehaviour
             Die();
         healthBar.UpdateHealthBar(health, maxHealth);
     }
+    public int GetHealth()
+    {
+        return health;
+    }
     private void Die()
     {
         transform.GetComponentInParent<ZombiePlatform>().DecreaseZombiePoint(zombiePoint);

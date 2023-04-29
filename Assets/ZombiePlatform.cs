@@ -12,7 +12,11 @@ public class ZombiePlatform : MonoBehaviour
         if (zombiePoint > PointManager.maxZombiePoint)
             zombiePoint = PointManager.maxZombiePoint;
         PointManager.Instance.SetPoint(PersonType.zombie, zombiePoint);
-        zombiePointText.text = zombiePoint.ToString();
+        if (zombiePoint == PointManager.maxZombiePoint)
+            zombiePointText.text = "MAX";
+        else
+            zombiePointText.text = zombiePoint.ToString();
+
         ZombieCreator.Instance.SetZombieSpawnTransform(zombieSpawnTransform);
         ZombieCreator.Instance.CreateZombies();
         SetTextActivation(true);
@@ -37,5 +41,9 @@ public class ZombiePlatform : MonoBehaviour
     private void SetTextActivation(bool isActive)
     {
         zombiePointText.enabled = isActive;
+    }
+    public int GetZombiePoint()
+    {
+        return zombiePoint;
     }
 }

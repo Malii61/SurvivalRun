@@ -37,6 +37,8 @@ public class Soldier : MonoBehaviour
         {
             if (collider.transform.TryGetComponent(out Zombie zombie))
             {
+                if (zombie.GetHealth() <= 0)
+                    continue;
                 RotateSoldier(zombie.transform.position);
                 if (fireRateTimer >= fireRate)
                 {

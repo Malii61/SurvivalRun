@@ -17,6 +17,6 @@ MonoBehaviour:
     type: 3}
   movementSpeed: 6
   attackSpeed: 2
-  health: 5000
-  damage: 120
+  health: 1250
+  damage: 480
   zombiePointRequired: 100
