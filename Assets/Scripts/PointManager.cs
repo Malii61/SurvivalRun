@@ -11,9 +11,9 @@ public class PointManager : MonoBehaviour
     public static int maxSoldierPoint = 10000000;
     public static PointManager Instance { get; private set; }
     private int zombiesPoint = 5;
-    private int soldiersPoint = 20;
+    private int soldiersPoint = 50;
     public event EventHandler<OnGamePointChangedEventArgs> OnGamePointChanged;
-    public class OnGamePointChangedEventArgs: EventArgs
+    public class OnGamePointChangedEventArgs : EventArgs
     {
         public int point;
     }

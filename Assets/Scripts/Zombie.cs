@@ -8,7 +8,7 @@ public class Zombie : MonoBehaviour
     private const string IS_RUNNING = "isRunning";
     private const string IS_HIT = "isHit";
 
-    private readonly float lookRange = 11f;
+    private readonly float lookRange = 13f;
     private NavMeshAgent agent;
     private Transform target;
     private bool isMoved = false;

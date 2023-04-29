@@ -37,7 +37,7 @@ public class SoldiersController : MonoBehaviour
         {
             if (_touch.phase == TouchPhase.Moved)
             {
-                float x = _touch.deltaPosition.x;
+                float x = _touch.deltaPosition.x * 0.008f;
                 Move(x);
             }
             else

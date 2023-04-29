@@ -1,8 +1,7 @@
-using System;
 using UnityEngine;
 public class Soldier : MonoBehaviour
 {
-    private readonly float attackRange = 7f;
+    private readonly float attackRange = 10f;
     private int health;
     private int maxHealth;
     private float fireRate;
