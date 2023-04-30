@@ -15,6 +15,7 @@ public class SoldiersController : MonoBehaviour
     private float targetSpeed;
     Touch _touch;
     private bool _dragStarted;
+    private float x = 0;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -23,8 +24,8 @@ public class SoldiersController : MonoBehaviour
     }
     private void LateUpdate()
     {
-#if UNITY_ANDROID && !UNITY_EDITOR
-        	
+#if UNITY_ANDROID&& !UNITY_EDITOR
+
         if (Input.touchCount > 0)
         {
             _touch = Input.GetTouch(0);
@@ -33,18 +34,15 @@ public class SoldiersController : MonoBehaviour
                 _dragStarted = true;
             }
         }
+
         if (_dragStarted)
         {
-            if (_touch.phase == TouchPhase.Moved)
-            {
-                float x = _touch.deltaPosition.x * 0.008f;
-                Move(x);
-            }
-            else
-            {
-                Move(0f);
-            }
+            x = _touch.deltaPosition.x * 0.3f;
+            Debug.Log(x);
+            Move(x);
         }
+        else
+            Move(0f);
 #else
 
         float horizontalMove = Input.GetAxis("Horizontal") * leftAndRightSpeed;
@@ -65,8 +63,8 @@ public class SoldiersController : MonoBehaviour
 
     private float GetHorizontalAxis()
     {
-#if UNITY_ANDROID && !UNITY_EDITOR
-            return Input.GetTouch(0).deltaPosition.x;
+#if UNITY_ANDROID&& !UNITY_EDITOR
+        return x;
 #else
         return Input.GetAxis("Horizontal");
 #endif
@@ -81,8 +79,8 @@ public class SoldiersController : MonoBehaviour
                 anim.SetFloat("Horizontal", horizontalAxisValue);
             }
         }
-        rb.MovePosition(transform.position + new Vector3(forwardSpeed * Time.deltaTime, 0, 0));
         rb.velocity = new Vector3(0, 0, -moveValue);
+        rb.MovePosition(transform.position + new Vector3(forwardSpeed * Time.deltaTime, 0, 0));
     }
     public void SetForwardSpeed(float speed)
     {

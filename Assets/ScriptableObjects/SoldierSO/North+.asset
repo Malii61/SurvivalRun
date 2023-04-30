@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c80466e5faaa344bf760a201f7e788, type: 3}
+  m_Name: North+
+  m_EditorClassIdentifier: 
+  soldierName: Soldier
+  soldierPrefab: {fileID: 5427609939114248601, guid: 84ecb4a833a1c80418972199a3c3cd20,
+    type: 3}
+  health: 500
+  soldierPointRequired: 500
+  gunType: 1
+  damage: 600
+  fireRate: 0.2

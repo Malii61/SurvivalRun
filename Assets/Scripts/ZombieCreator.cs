@@ -35,7 +35,7 @@ public class ZombieCreator : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             Transform soldier = Instantiate(zombieSO.zombiePrefab, zombieSpawnTransform);
-            soldier.Translate(new Vector3(Random.Range(-1.5f, 1.5f), 0, Random.Range(-1.5f, 1.5f)));
+            soldier.Translate(new Vector3(Random.Range(-1.5f, 1.5f), 0, Random.Range(-2.5f, 2.5f)));
             soldier.GetComponent<Zombie>().InitializeZombie(zombieSO);
         }
     }

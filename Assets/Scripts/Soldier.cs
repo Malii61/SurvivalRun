@@ -12,6 +12,7 @@ public class Soldier : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     [SerializeField] SoldierAnimationController soldierAnimationController;
     [SerializeField] Gun gun;
+    private Transform target;
     private readonly float rotationDamping = 20f;
     private void Start()
     {
@@ -27,6 +28,11 @@ public class Soldier : MonoBehaviour
     private void FixedUpdate()
     {
         CheckZombiesAround();
+
+        if (target != null)
+            transform.LookAt(target);
+        else
+            RotateSoldier(firstRotation);
     }
 
     private void CheckZombiesAround()
@@ -38,7 +44,8 @@ public class Soldier : MonoBehaviour
             {
                 if (zombie.GetHealth() <= 0)
                     continue;
-                RotateSoldier(zombie.transform.position);
+                target = zombie.transform;
+                //RotateSoldier(zombie.transform.position);
                 if (fireRateTimer >= fireRate)
                 {
                     gun.Fire(zombie.transform.position);
@@ -50,25 +57,14 @@ public class Soldier : MonoBehaviour
             else
             {
                 //rotate soldier to the first rotation value
-                RotateSoldier(Vector3.zero);
+                //RotateSoldier(Vector3.zero);
             }
         }
         fireRateTimer += Time.fixedDeltaTime;
     }
 
-    private void RotateSoldier(Vector3 zombiePos)
+    private void RotateSoldier(Quaternion rotation)
     {
-        var lookDir = zombiePos - transform.position;
-        lookDir.y = 0;
-        Quaternion rotation;
-        if(zombiePos == Vector3.zero)
-        {
-            rotation = firstRotation;
-        }
-        else
-        {
-            rotation = Quaternion.LookRotation(lookDir);
-        }
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationDamping);
     }
 

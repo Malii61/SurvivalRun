@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using System;
+
 public class ZombiePlatform : MonoBehaviour
 {
     [SerializeField] Transform zombieSpawnTransform;
@@ -20,11 +22,20 @@ public class ZombiePlatform : MonoBehaviour
         ZombieCreator.Instance.SetZombieSpawnTransform(zombieSpawnTransform);
         ZombieCreator.Instance.CreateZombies();
         SetTextActivation(true);
-        foreach (var optionPanel in optionPanels)
-        {
-            optionPanel.ResetPanel();
-        }
+        SetRandomAttributesForPanels();
     }
+
+    private void SetRandomAttributesForPanels()
+    {
+        int randomOperationValue = UnityEngine.Random.Range(0, 2);
+        optionPanels[0].SetOperationText(randomOperationValue == 0);
+        optionPanels[1].SetOperationText(randomOperationValue == 1);
+
+        int randomColliderPositionValue = UnityEngine.Random.Range(0, 2);
+        optionPanels[0].ResetPanel(randomColliderPositionValue == 0);
+        optionPanels[1].ResetPanel(randomColliderPositionValue == 1);
+    }
+
     public void DecreaseZombiePoint(int point)
     {
         if (zombiePointText.enabled)

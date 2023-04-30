@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04940255, g: 0.09289706, b: 0.12993892, a: 1}
+  m_IndirectSpecularColor: {r: 0.049412377, g: 0.09290744, b: 0.12988794, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 603789536}
   m_Lens:
-    FieldOfView: 64.9
+    FieldOfView: 70
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 125
@@ -186,7 +186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118867991}
   m_LocalRotation: {x: 0.1225882, y: 0.6562027, z: -0.10922211, w: 0.73650575}
-  m_LocalPosition: {x: -71.98723, y: 10.030001, z: -2.1}
+  m_LocalPosition: {x: -96.50723, y: 10.030001, z: -2.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -236,7 +236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 101.84, y: 175}
+  m_AnchoredPosition: {x: 101.84009, y: 175}
   m_SizeDelta: {x: 175, y: 175}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &155380590
@@ -565,7 +565,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 125
-  field of view: 64.9
+  field of view: 70
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -591,7 +591,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   m_LocalRotation: {x: 0.1225882, y: 0.6562027, z: -0.10922211, w: 0.73650575}
-  m_LocalPosition: {x: -71.98723, y: 10.030001, z: -2.1}
+  m_LocalPosition: {x: -96.50723, y: 10.030001, z: -2.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -804,8 +804,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434659859}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -62.697437, y: 2.220446e-16, z: -0.23197189}
-  m_LocalScale: {x: 2.5, y: 1, z: 3.4052455}
+  m_LocalPosition: {x: -73.15, y: 0, z: -0.18}
+  m_LocalScale: {x: 4.59, y: 1, z: 3.4052455}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 570120442}
@@ -1030,7 +1030,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603789535}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -62.48, y: 0.48000094, z: 0}
+  m_LocalPosition: {x: -87, y: 0.48000094, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1670,11 +1670,16 @@ MonoBehaviour:
   zombies:
   - {fileID: 11400000, guid: 16a00dbeb68c5794b932eeb18e79a02f, type: 2}
   - {fileID: 11400000, guid: 320aaa72717d73045a1c3f879194b6b6, type: 2}
+  - {fileID: 11400000, guid: 8522551bb7340a54aab7cc9b00d7dd68, type: 2}
   - {fileID: 11400000, guid: be1d07d7a1d3c844cbb0aaec4bb81c4b, type: 2}
+  - {fileID: 11400000, guid: f3eaa947a91ec7940a7c7a52ba82a0c5, type: 2}
   - {fileID: 11400000, guid: e8538668c31deda4385a071e4723677c, type: 2}
+  - {fileID: 11400000, guid: 9040c43d2ff7c124391678ed4a8bb110, type: 2}
   - {fileID: 11400000, guid: f8d02083cf9df7e42b07336d82b69754, type: 2}
+  - {fileID: 11400000, guid: ebea7b94347072e458d9888e0b3da49d, type: 2}
   - {fileID: 11400000, guid: 04442f4bb47bd42489de99310778f9db, type: 2}
   - {fileID: 11400000, guid: 7b106305532ec8c4898ce32e9db6220c, type: 2}
+  - {fileID: 11400000, guid: 14603df766ab9254c91f6c4649b9c62b, type: 2}
   - {fileID: 11400000, guid: 0ddb967398e566f4b86eeea08a5f99ae, type: 2}
   zombieSpawnTransform: {fileID: 1568546263}
 --- !u!4 &949383942
@@ -3119,7 +3124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369993277}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.307177}
+  m_LocalPosition: {x: 0, y: 0, z: -3.24}
   m_LocalScale: {x: 1, y: 1, z: 0.29366457}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3308,7 +3313,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 77.359985, y: -77.44}
+  m_AnchoredPosition: {x: 77.35986, y: -77.43994}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1535810006
@@ -3494,11 +3499,17 @@ MonoBehaviour:
   soldiers:
   - {fileID: 11400000, guid: 5b7476820a8ffab4fb91388eb1ad9cc5, type: 2}
   - {fileID: 11400000, guid: b3b6e518f02bd744d9fa83ce37fb63b8, type: 2}
+  - {fileID: 11400000, guid: 65ab3c58cd7e7304babf967d690a9532, type: 2}
   - {fileID: 11400000, guid: bef9fe640d35ba84d90ec2046183aaf0, type: 2}
+  - {fileID: 11400000, guid: 15c7c2753e4023549a94a91186db97d4, type: 2}
   - {fileID: 11400000, guid: b9b1bad5411bfb44d811e2c4517cdf6e, type: 2}
+  - {fileID: 11400000, guid: 7e0921eb032cd304989497be0dec3f36, type: 2}
   - {fileID: 11400000, guid: d69f2be5249af304aad01900e7a18f36, type: 2}
+  - {fileID: 11400000, guid: 1baf7278db07d0a418cfe7ce3a0e6994, type: 2}
   - {fileID: 11400000, guid: b4cdf90f90aa8b748b6a75a78d4e7494, type: 2}
+  - {fileID: 11400000, guid: c7b39a39bd882d04da4941a6db791815, type: 2}
   - {fileID: 11400000, guid: f7c62fdfd123e8d4a8f47796a482c87e, type: 2}
+  - {fileID: 11400000, guid: 79550ef874bc60b47b6452e27309cde7, type: 2}
   - {fileID: 11400000, guid: a6dad93345396194b87c0f33b30de295, type: 2}
   creatingSoldierTransform: {fileID: 603789536}
 --- !u!4 &1562877324
@@ -5264,7 +5275,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: cd5fe4f200d54d64ab54d83ecd1fb139,
+      objectReference: {fileID: 23800000, guid: 1d84f9240335e804e8b0c23c9886a793,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1415e80f1c552745b52909e103b5fa8, type: 3}
