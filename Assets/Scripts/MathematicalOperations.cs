@@ -17,14 +17,14 @@ public class MathematicalOperations
         "2*x*sin90",
         "2*x*cos0",
         "30+3*x",
-        "300+2*x", //0 prob
-        "100+x", //0 prob
+        "300+2*x", 
+        "100+x",
     };
     public List<string> negativeOperationsList = new List<string>()
     {
-        "(x+50)/8", //0 prob
-        "(x+90)/10", //0 prob
-        "x - 30", //0 prob
+        "(x+50)/8", 
+        "(x+90)/10",
+        "x - 30", 
         "300-2*x", //0 prob
         "100-x", //0 prob
         "2*x*sin0",//0

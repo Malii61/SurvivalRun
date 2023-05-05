@@ -39,7 +39,7 @@ public class OptionPanel : MonoBehaviour
             panelBackground.color = Color.green;
         else
             panelBackground.color = Color.red;
-        //dosth
+
         // create soldiers according to soldier point
         SoldierCreator.Instance.CreateSoldiers();
 
