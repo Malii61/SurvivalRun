@@ -31,7 +31,7 @@ Here are some features of the game:
   <img src="/Images/in%20game%202.png" width="150" height="300"/>
   
  ### Gameplay
-  <img src="/Images/Cube%20Surfing%20Gameplay.gif" width="200" height="375"/>
+  <img src="/Images/Gameplay.gif" width="200" height="375"/>
   
   
 ### Installation
