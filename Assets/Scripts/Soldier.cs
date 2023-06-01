@@ -45,7 +45,6 @@ public class Soldier : MonoBehaviour
                 if (zombie.GetHealth() <= 0)
                     continue;
                 target = zombie.transform;
-                //RotateSoldier(zombie.transform.position);
                 if (fireRateTimer >= fireRate)
                 {
                     gun.Fire(zombie.transform.position);
@@ -53,11 +52,6 @@ public class Soldier : MonoBehaviour
                     fireRateTimer = 0;
                 }
                 break;
-            }
-            else
-            {
-                //rotate soldier to the first rotation value
-                //RotateSoldier(Vector3.zero);
             }
         }
         fireRateTimer += Time.fixedDeltaTime;

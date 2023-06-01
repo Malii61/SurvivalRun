@@ -70,6 +70,7 @@ public class Zombie : MonoBehaviour
             {
                 if (collider.transform.TryGetComponent(out Soldier soldier))
                 {
+                    // Soldier detected from zombie
                     animator.SetBool(IS_RUNNING, true);
                     target = soldier.transform;
                     agent.SetDestination(target.position);
@@ -80,10 +81,12 @@ public class Zombie : MonoBehaviour
         }
         if (target != null)
         {
+            // Chasing the soldier
             agent.SetDestination(target.position);
             float distance = Vector3.Distance(target.position, transform.position);
             if (distance <= agent.stoppingDistance && attackTimer >= attackSpeed)
             {
+                // Attack the soldier
                 ResetAfterPlayingAnimation(IS_ATTACKING);
                 target.GetComponent<Soldier>().GetDamage(damage);
                 attackTimer = 0;

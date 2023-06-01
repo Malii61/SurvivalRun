@@ -21,6 +21,7 @@ public class SoldierCreator : MonoBehaviour
         OnCreatedNewSoldiers?.Invoke(this, EventArgs.Empty);
         DestroyPreviousSoldiers();
         int soldiersPoint = PointManager.Instance.GetPoint(PersonType.soldier);
+        // Create new soldiers according to current point
         for (int i = soldiers.Count - 1; i >= 0; i--)
         {
             if (soldiersPoint < soldiers[i].soldierPointRequired)
@@ -32,6 +33,7 @@ public class SoldierCreator : MonoBehaviour
     }
     private void DestroyPreviousSoldiers()
     {
+        // Destroy previous soldiers before create new ones
         int childCount = creatingSoldierTransform.childCount;
         for (int i = 1; i < childCount; i++)
         {
@@ -41,6 +43,7 @@ public class SoldierCreator : MonoBehaviour
 
     private void CreateSoldier(SoldierSO soldierSO, int count)
     {
+        // Create soldier from given soldierSO
         for (int i = 0; i < count; i++)
         {
             Transform soldier = Instantiate(soldierSO.soldierPrefab, creatingSoldierTransform);

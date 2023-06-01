@@ -38,7 +38,6 @@ public class SoldiersController : MonoBehaviour
         if (_dragStarted)
         {
             x = _touch.deltaPosition.x * 0.3f;
-            Debug.Log(x);
             Move(x);
         }
         else
