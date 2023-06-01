@@ -26,9 +26,9 @@ Here are some features of the game:
   
   
 ### Images From Game
-  <img src="/Images/main%20menu.png" width="150" height="300"/>
-  <img src="/Images/in%20game%201.png" width="150" height="300"/>
-  <img src="/Images/in%20game%202.png" width="150" height="300"/>
+  <img src="/Images/main%20menu.png" width="150" height="275"/>
+  <img src="/Images/in%20game%201.png" width="150" height="275"/>
+  <img src="/Images/in%20game%202.png" width="150" height="275"/>
   
  ### Gameplay
   <img src="/Images/Gameplay.gif" width="200" height="375"/>
